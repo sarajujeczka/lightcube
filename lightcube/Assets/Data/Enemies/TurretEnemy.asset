@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac888f563d1fac74f8ed853fa1fe733f, type: 3}
+  m_Name: TurretEnemy
+  m_EditorClassIdentifier: 
+  fireRate: 0.5
+  moveRate: 1
+  force: 80
+  bullet: {fileID: 114492422736623652, guid: 418c815c2a98d6d48956160d49b88946, type: 2}
+  prefab: {fileID: 114794964203770360, guid: 5092d4e6118002540a519efd1b2e0d61, type: 2}
+  colours:
+  - {fileID: 11400000, guid: 780a2fc99427a9c45a56e86c9d8b6f15, type: 2}
+  - {fileID: 11400000, guid: e54b09be2635dcd4abdb4b63ad374710, type: 2}
+  - {fileID: 11400000, guid: 715ba72e67e736b4294b7a85f5eb5457, type: 2}
+  - {fileID: 11400000, guid: ae069c7edb3fcc04797e8370ea693e50, type: 2}
+  - {fileID: 11400000, guid: 60fe7267e49facd45b9c02263e9b6587, type: 2}
+  - {fileID: 11400000, guid: 7005d82e910086f4f82705f46a6688f9, type: 2}

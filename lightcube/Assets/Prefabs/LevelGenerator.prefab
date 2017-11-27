@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1554289695791640}
+  m_IsPrefabParent: 1
+--- !u!1 &1496702877101832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4358542412394610}
+  m_Layer: 0
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1554289695791640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4410518426109040}
+  - component: {fileID: 61915664814547076}
+  - component: {fileID: 114278493394683144}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4358542412394610
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1496702877101832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4410518426109040}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4410518426109040
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554289695791640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4358542412394610}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61915664814547076
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554289695791640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6}
+  m_EdgeRadius: 0
+--- !u!114 &114278493394683144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554289695791640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f1b2b2da6dac34f9b7d21b5aeb8a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 2800000, guid: b084a968efa12eb419f35e78a146736c, type: 3}
+  spawnPlace: {fileID: 4358542412394610}
+  colorMappings:
+  - name: Solid
+    color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1387322819061308, guid: 2e17d397197cd774fa110bf04beb13f0, type: 2}
+    colour: {fileID: 0}
+  - name: Destroyable
+    color: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.19607843}
+    prefab: {fileID: 1474075137793894, guid: dc7d1dd155665bb49bd2af5b66e8e962, type: 2}
+    colour: {fileID: 0}
+  - name: Orange Enemy
+    color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 0.19607843}
+    prefab: {fileID: 1666721553581836, guid: 1a78666e69c5d88458374000bf7e43a9, type: 2}
+    colour: {fileID: 0}
+  - name: Yellow Enemy
+    color: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 0.19607843}
+    prefab: {fileID: 1666721553581836, guid: 1a78666e69c5d88458374000bf7e43a9, type: 2}
+    colour: {fileID: 0}
+  - name: Green Enemy
+    color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.19607843}
+    prefab: {fileID: 1666721553581836, guid: 1a78666e69c5d88458374000bf7e43a9, type: 2}
+    colour: {fileID: 0}
+  - name: Blue Enemy
+    color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 0.19607843}
+    prefab: {fileID: 1666721553581836, guid: 1a78666e69c5d88458374000bf7e43a9, type: 2}
+    colour: {fileID: 0}
+  - name: Violett Enemy
+    color: {r: 0.078431375, g: 0.078431375, b: 0.078431375, a: 0.19607843}
+    prefab: {fileID: 1666721553581836, guid: 1a78666e69c5d88458374000bf7e43a9, type: 2}
+    colour: {fileID: 0}
+  - name: Random Brick
+    color: {r: 0, g: 0, b: 0, a: 0}
+    prefab: {fileID: 1987842359186306, guid: 4171476f3ad639a428e7a82da9f47835, type: 2}
+    colour: {fileID: 0}
+  - name: Solid Brick
+    color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1387322819061308, guid: 2e17d397197cd774fa110bf04beb13f0, type: 2}
+    colour: {fileID: 0}

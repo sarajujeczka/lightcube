@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572a4fdf1e5a65c468d09b8acedde699, type: 3}
+  m_Name: Blue
+  m_EditorClassIdentifier: 
+  colour: 4
+  nextColour: {fileID: 11400000, guid: 60fe7267e49facd45b9c02263e9b6587, type: 2}
+  prevColour: {fileID: 11400000, guid: e54b09be2635dcd4abdb4b63ad374710, type: 2}
+  matEmit: {fileID: 2100000, guid: e638e407a2f2608458cd7607a6db6dde, type: 2}
+  material: {fileID: 2100000, guid: f95a14b028a4102428ae87ba7ff18af2, type: 2}
+  particleSystem: {fileID: 0}

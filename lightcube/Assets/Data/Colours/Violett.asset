@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572a4fdf1e5a65c468d09b8acedde699, type: 3}
+  m_Name: Violett
+  m_EditorClassIdentifier: 
+  colour: 5
+  nextColour: {fileID: 11400000, guid: ae069c7edb3fcc04797e8370ea693e50, type: 2}
+  prevColour: {fileID: 11400000, guid: 780a2fc99427a9c45a56e86c9d8b6f15, type: 2}
+  matEmit: {fileID: 2100000, guid: d26bf4ad02d38394c8b0c19c8073315c, type: 2}
+  material: {fileID: 2100000, guid: d2fdfeac08e7bd5418df1d92c9e25c06, type: 2}
+  particleSystem: {fileID: 0}
